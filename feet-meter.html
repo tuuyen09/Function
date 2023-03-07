@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let meter = parseFloat(prompt('Enter meter'));
+    let feet = parseFloat(prompt('Enter feet'));
+
+    metertofeet(meter);
+    feettometer(feet);
+
+    function metertofeet(meter) {
+        let feet = meter * 3.279;
+        return document.write(meter + ' meter = ' + feet + ' feet' + '<br>');
+    }
+
+    function feettometer(feet) {
+        let meter = feet * 0.305;
+        return document.write(feet + ' feet = ' + meter + ' meter');
+    }
+
+
+</script>
 </body>
 </html>
