@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhap de check'));
+    isPrime(n)
+
+    function isPrime(number) {
+        if (number < 2) {
+            return alert(n + ' khong phai so nguyen to');
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return alert(n + ' khong phai so nguyen to');
+            }
+
+        }
+        return alert(n + ' la so nguyen to');
+    }
+</script>
+</body>
+</html>
