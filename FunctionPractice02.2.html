@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function circleArea (x){
+        return (x*x)*3.14;
+    }
+    function circlePerimeter (x) {
+        return x*2*3.14;
+    }
+
+    let a = parseFloat(prompt('Nhap ban kinh:'));
+    document.write('Dien tich hinh tron = ' + circleArea(a) + '<br>');
+    document.write('Chu vi hinh tron = ' + circlePerimeter(a));
+
+</script>
 </body>
 </html>
