@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let a = parseInt(prompt('Nhap vao so nguyen a:'));
+  let b = parseInt(prompt('Nhap vao so nguyen b:'));
+  let c = parseInt(prompt('Nhap vao so nguyen c:'));
+  function min (x,y,z) {
+    let min = x;
+    if (min>y){
+      if (y<z){
+        return min = y;
+      } else {
+        return min = z;
+      }
+    } else {
+      return min = x;
+    }
+  }
+  alert('min = ' + min(a,b,c));
+</script>
 </body>
 </html>
